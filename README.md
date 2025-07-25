@@ -1,4 +1,3 @@
-Here's an updated README.md file based on your actual controller implementation:
 
 # Quiz App - Spring Boot Backend
 
