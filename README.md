@@ -76,22 +76,22 @@ public class Response {
 
 ### Create a Quiz
 ```bash
-curl -X POST "http://localhost:8080/quiz/create?category=Science&numQ=5&title=Science%20Quiz"
+curl -X POST "http://localhost:9090/quiz/create?category=Science&numQ=5&title=Science%20Quiz"
 ```
 
 ### Get Quiz Questions
 ```bash
-curl -X GET "http://localhost:8080/quiz/get/1"
+curl -X GET "http://localhost:9090/quiz/get/1"
 ```
 
 ### Submit Quiz Answers
 ```bash
-curl -X POST -H "Content-Type: application/json" -d '[{"id":1,"response":"A"},{"id":2,"response":"B"}]' "http://localhost:8080/quiz/submit/1"
+curl -X POST -H "Content-Type: application/json" -d '[{"id":1,"response":"A"},{"id":2,"response":"B"}]' "http://localhost:9090/quiz/submit/1"
 ```
 
 ### Get All Questions
 ```bash
-curl -X GET "http://localhost:8080/questions/all"
+curl -X GET "http://localhost:9090/questions/all"
 ```
 
 ### Add New Question
@@ -105,7 +105,7 @@ curl -X POST -H "Content-Type: application/json" -d '{
     "rightAnswer": "Paris",
     "difficultyLevel": "Easy",
     "category": "Geography"
-}' "http://localhost:8080/questions/add"
+}' "http://localhost:9090/questions/add"
 ```
 
 ## Setup Instructions
